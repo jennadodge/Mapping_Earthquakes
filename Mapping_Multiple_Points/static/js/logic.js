@@ -10,7 +10,7 @@ let cityData = cities;
   // Loop through the cities array and create one marker for each city.
 cityData.forEach(function(city) {
     console.log(city)
-    L.circleMarker(city.location,{
+    L.marker(city.location,{
         radius: city.population/200000,
         color: "orange",
         weight: 4,
